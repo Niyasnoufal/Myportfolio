@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <script defer src="https://kit.fontawesome.com/3982d61e77.js" crossorigin="anonymous"></script>
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <section class="navbar">
+        <h1>My Portfolio</h1>
+        <ul class="list">
+            <!-- <li>
+                <a href="#home">Home</a>
+                <hr class="bottomline" />
+            </li> -->
+            <li><a href="#about">About</a></li>
+            <li><a href="#myskill">My Skill</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p class="menu"><i class="fa-solid fa-bars"></i></p>
+    </section>
+    <section class="mobileNavbar">
+        <ul class="list-mobile">
+            <li class="close"><i class="fa-solid fa-xmark"></i></li>
+            <!-- <li><a href="#home">Home</a></li> -->
+            <li><a href="#about">About</a></li>
+            <li><a href="#myskill">My Skill</a></li>
+            
+
+        </ul>
+    </section>
+
+    <!-- <section class="home">
+        <div class="home-cont">
+            <div class="home-intro">
+                <div class="home-intro-content">
+                    <h1>Hi, I'm <span>Irfana</span></h1>
+                    <p>Aspiring tech enthusiast, with Btech degree in Ai&Ds </p>
+                </div>
+                <div class="Resume">
+                    <button class="resBtn"><a href="">View CV</a></button>
+                </div>
+            </div>
+            <div class="picture">
+                <img src="./images/myImg.jpg" alt="profile_pic" />
+            </div>
+        </div>
+            
+               
+            
+        
+    </section> -->
+<!-- 
+    <section id="home" class="home">
+        <div class="myHome">
+            <div class="home-content">
+                <div class="my-intro">
+                    
+                    <h1>Hi, I'm<span class="name" id="myName">Irfana</span></h1>
+                </div>
+    
+                <div class="self-intro">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.Qui,
+                        iure doloremque ullam dolores inventore non beatae tempora dolore
+                        voluptate maxime ex quod
+                    </p>
+                </div>
+                
+            </div>
+            
+            <div class="picture">
+                
+                <img src="./images/pexels-diego-salamanca-289675900-15241244.jpg" alt="profile_pic" />
+            </div>
+        </div>
+        
+    </section> -->
+
+    <section id="about" class="about">
+        <h1 class="abt"></h1>
+        <div class="abt_container">
+            <div class="aboutcontent">
+                <div class="education">
+                    <div class="complete_details">
+                        <div class="graduatedCourse">
+                            <h2>Major:</h2>
+                            <p>BTech AI&Ds</p>
+                        </div>
+                        <div class="grade">
+                            <h2>Grade:</h2>
+                            <p>8.9 C.G.P.A</p>
+                        </div>
+
+                        <div class="YOP">
+                            <h2>
+                                Year of <br />
+                                passing:
+                            </h2>
+                            <p>2026</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="myself">
+                    <p class="short-story show">
+                        My Self Irfana, and I am currently residing in Coimbatore. I am pursuing a BTech in Artificial Intelligence and Data Science at Karpagam Academy of Higher Education, where I have gained valuable knowledge in AI and data science. While I am passionate about AI, my  interest lies in web development, particularly front-end development.
+                        I have a strong foundation in HTML, CSS, and JavaScript, and I have hands-on experience working on front-end projects.Also, I have developed a good understanding of MySQL and have worked with databases in several projects.
+                        Along with my technical skills, I am also passionate about AI and ML, and I possess a solid understanding of their fundamentals
+                    </p>
+                    <button class="hire"><a href="https://drive.google.com/file/d/1N2sMbOOE2EJT92UDqgMf9SKo-67QWpMv/view?usp=sharing" target="_blank">View Cv</a></button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <section id="myskill" class="myskill">
+        <div class="myskill">
+            <div class="scorehead">
+                <h1>Expertise</h1>
+            </div>
+
+            <div class="ScoreBoard">
+               
+                <div class="circle" data-degree="90" data-color="#d90731">
+                    <h2 class="number">90<span>%</span></h2>
+                    <h4 class="skillname">Html</h4>
+                </div>
+                <div class="circle" data-degree="80" data-color="#12e331">
+                    <h2 class="number">80<span>%</span></h2>
+                    <h4 class="skillname">Css</h4>
+                </div>
+                <div class="circle" data-degree="65" data-color="#e617e3">
+                    <h2 class="number">70<span>%</span></h2>
+                    <h4 class="skillname">Javascript</h4>
+                </div>
+
+                <div class="circle" data-degree="65" data-color="#032082">
+                    <h2 class="number">85<span>%</span></h2>
+                    <h4 class="skillname">Python</h4>
+                </div>
+
+                <div class="circle" data-degree="65" data-color="#ccc">
+                    <h2 class="number">60<span>%</span></h2>
+                    <h4 class="skillname">Java</h4>
+                </div>
+                
+            </div>
+        </div>
+               <div class="interestHead">
+                <h1>My Projects</h1>
+               </div>
+               <div class="areaofinterest">
+                    <div class="card">
+                        <div class="uppercard">
+                            <img src="images/weatherImg.jpg" alt="AI"/>
+                        </div>
+                        <div class="lowercard">
+                            <h2>Weather Forecasting App</h2>
+                            <p>A web application that allows users to search for the current weather and forecast of any city using real-time data. It displays temperature, humidity, wind speed, and weather conditions.
+                                </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="uppercard">
+                            <img src="images/eCommerceImg.jpg" alt="AI"/>
+                        </div>
+                        <div class="lowercard">
+                            <h2>E-commerce Website
+                            </h2>
+                            <p> An online shopping platform that displays products fetched from an API. It includes a home page, product listing, and detailed product view—similar to Flipkart or Amazon.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="uppercard">
+                            <img src="images/pexels-googledeepmind-18069697.jpg" alt="AI"/>
+                        </div>
+                        <div class="lowercard">
+                            <h2> AI Simple Chatbot</h2>
+                            <p>A basic chatbot that responds to user queries using pre-defined rules or a lightweight AI logic. It can answer FAQs or simulate small talk for engagement.</p>
+                        </div>
+                    </div>
+               </div>
+        </div>
+    </section>
+
+    <!-- <section id="project" class="project">
+        <div class="projectContainerSlide">
+            <div class="projectItem" style="background-image: url(images/pexels-pixabay-220072.jpg);">
+               <div class="content">
+                    <div class="name">portfolio</div>
+                    <div class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, beatae.</div>
+                    <button>See More</button>
+               </div>
+            </div>
+            <div class="projectItem" style="background-image: url(images/pexels-goumbik-590022.jpg);">
+                <div class="content">
+                     <div class="name">Ecommerce</div>
+                     <div class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, beatae.</div>
+                     <button>See More</button>
+                </div>
+             </div>
+             <div class="projectItem" style="background-image: url(images/pexels-diego-salamanca-289675900-15241244.jpg);">
+                <div class="content">
+                     <div class="name">Responsive</div>
+                     <div class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, beatae.</div>
+                     <button>See More</button>
+                </div>
+             </div>
+             <div class="projectItem" style="background-image: url(images/pexels-tara-winstead-8386440.jpg);">
+                <div class="content">
+                     <div class="name">MoviesApp</div>
+                     <div class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, beatae.</div>
+                     <button>See More</button>
+                </div>
+             </div>
+             <div class="projectItem" style="background-image: url(images/pexels-googledeepmind-18069697.jpg);">
+                <div class="content">
+                     <div class="name">NetflixClone</div>
+                     <div class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, beatae.</div>
+                     <button>See More</button>
+                </div>
+             </div>
+            <div class="changebtn">
+                <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="contact" class="contact">
+        <div class="contactHead">
+            <h1>Connect Me Via</h1>
+        </div>
+        <div class="contact">
+            <ul >
+                <li><a href="mailto: irfanabasheer11@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><i class="fa-solid fa-phone"></i><span>+91 9566087177</span></li>
+                <li><a href="https://www.linkedin.com/in/irfana-basheer11" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+
+            </ul>
+            <div class="copyrights">
+                <p>Copyright &copy 2025 All rights reserved</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <script defer src="main.js"></script>
+</body>
+
+</html>
