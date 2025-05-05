@@ -4,6 +4,7 @@ const mobileNav = document.querySelector(".mobileNavbar");
 const myName = document.getElementById("myName");
 const list = document.querySelector(".list");
 const hr = document.querySelector(".bottomline");
+const mobileLinks = document.querySelectorAll(".list-mobile li a");
 
 // const next = document.querySelector(".next");
 // const prev = document.querySelector(".prev");
@@ -51,12 +52,34 @@ menu.addEventListener("click", (e) => {
     mobileNav.style.opacity = "1";
 })
 
+// closeNav.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     mobileNav.style.display = "none"
+//     mobileNav.style.right = "-100%";
+//     mobileNav.style.opacity = "0"; 
+// })
+
 closeNav.addEventListener("click", (e) => {
     e.preventDefault();
-    mobileNav.style.display = "none"
+    closeMobileNav();
+});
+
+// Function to close the mobile nav
+function closeMobileNav() {
     mobileNav.style.right = "-100%";
-    mobileNav.style.opacity = "0"; 
-})
+    mobileNav.style.opacity = "0";
+    // Use timeout to wait for the transition to finish before hiding
+    setTimeout(() => {
+        mobileNav.style.display = "none";
+    }, 500); // match with your transition duration (or a bit less)
+}
+
+// Add click listener to each mobile link
+mobileLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        closeMobileNav();
+    });
+});
 
 
 
